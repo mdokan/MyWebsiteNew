@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+h1, h2 {
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul li a.active {
+    color: #ffcc00;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Header Section */
+.header {
+    padding: 50px 20px;
+    background-color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.profile-info {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Content Area */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Skills Section */
+.skills, .featured, .personal {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 20px); /* Adjusted to take up half of the container width */
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;  /* Wraps to the next line if the skills overflow */
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    white-space: nowrap; /* Ensures the text doesn't wrap within the button */
+}
+
+.skills li:before {
+    content: "+";
+    margin-right: 5px;
+    color: #ffcc00;
+}
+
+/* Personal Section */
+.personal {
+    flex-basis: 100%;
+}
+
+.personal p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .skills, .featured, .personal {
+        flex-basis: 100%;
+    }
+
+    .skills ul {
+        justify-content: flex-start;
+    }
+}
+
+/* General Box Style for Sections */
+.box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#contact ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
